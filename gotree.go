@@ -48,6 +48,12 @@ func (t *tree) Add(text string) Tree {
 	return n
 }
 
+// Update node in tree
+func (t *tree) Update(text string) Tree {
+	t.text = text
+	return t
+}
+
 // AddTree is add tree in present tree
 func (t *tree) AddTree(tree Tree) {
 	t.items = append(t.items, tree)
